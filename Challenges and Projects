@@ -1,8 +1,8 @@
 # SQL-Khan-Academy
-This repository represents my SQL code as I complete the Khan Academy challenges and projects on my own.
+# This repository represents my SQL code as I complete the Khan Academy challenges and projects on my own.
 
 
-Project: Design a store database
+# Project: Design a store database
 CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, price NUMERIC, remaining INTEGER, tax NUMERIC);
 
 INSERT INTO store VALUES(1, "shirt", 7.99, 24, 0.08);
@@ -17,7 +17,7 @@ SELECT item, price FROM store GROUP BY price;
 SELECT item, remaining FROM store WHERE remaining < 20;
 
 
-Challenge: Karaoke song selector
+# Challenge: Karaoke song selector
 CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, price NUMERIC, remaining INTEGER, tax NUMERIC);
 
 INSERT INTO store VALUES(1, "shirt", 7.99, 24, 0.08);
@@ -32,7 +32,7 @@ SELECT item, price FROM store GROUP BY price;
 SELECT item, remaining FROM store WHERE remaining < 20;
 
 
-Querying IN subqueries (notes)
+# Querying IN subqueries (notes)
 CREATE TABLE exercise_logs
     (id INTEGER PRIMARY KEY AUTOINCREMENT,
     type TEXT,
@@ -75,7 +75,7 @@ SELECT * FROM exercise_logs WHERE type IN (
     SELECT type FROM drs_favorites WHERE reason LIKE "%cardiovascular%");
 
 
-Challenge: Playlist maker
+# Challenge: Playlist maker
 CREATE TABLE artists (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
@@ -145,7 +145,7 @@ SELECT name FROM artists WHERE genre = "Pop";
 SELECT title FROM songs WHERE artist IN (SELECT name FROM artists WHERE genre = "Pop");
 
 
-Challenge: The wordiest author
+# Challenge: The wordiest author
 CREATE TABLE books (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     author TEXT,
