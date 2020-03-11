@@ -1,4 +1,10 @@
 # Challenge: The wordiest author
+# We've created a database of a few popular authors and their books, with word counts for each book. In this first step, select all the 
+# authors who have written more than 1 million words, using GROUP BY and HAVING. Your results table should include the 'author' and 
+# their total word count as a 'total_words' column. Now select all the authors that write more than an average of 150,000 words per book. 
+# Your results table should include the 'author' and average words as an 'avg_words' column.
+
+
 CREATE TABLE books (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     author TEXT,
