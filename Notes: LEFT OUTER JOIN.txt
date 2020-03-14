@@ -1,0 +1,3 @@
+The table following the FROM clause is considered the "left" table, and the table following the JOIN clause is considered the "right" table.
+LEFT tells SQL to retain every row in the left table.
+OUTER tells SQL to retain the rows even if there is no match in the right table.
